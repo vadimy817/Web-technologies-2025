@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик покупок</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="cart">
+    <div class="column">
+        <div class="input-group">
+            <input type="text" placeholder="Назва товару">
+            <button class="add-item-button" data-tooltip="Додати новий товар до списку">Додати</button>
+        </div>
+
+        <div class="item">
+            <span class="crossed">Помідори</span>
+            <div class="amount-controls">
+            <span class="amount">2</span>
+            </div>
+            <button class="status" data-tooltip="Позначити як куплено">Не куплено</button>
+            <button class="delete-button" data-tooltip="Видалити товар">X</button>
+        </div>
+
+        <div class="item">
+            <span>Печиво</span>
+            <div class="amount-controls">
+                <button class="remove" data-tooltip="Зменшити кількість">-</button>
+                <span class="amount">2</span>
+                <button class="add" data-tooltip="Збільшити кількість">+</button>
+            </div>
+            <button class="status bought" data-tooltip="Позначити як не куплено">Куплено</button>
+            <button class="delete-button" data-tooltip="Видалити товар">X</button>
+        </div>
+
+        <div class="item">
+            <span>Сир</span>
+            <div class="amount-controls">
+                <button class="remove" data-tooltip="Зменшити кількість">-</button>
+                <span class="amount">1</span>
+                <button class="add" data-tooltip="Збільшити кількість">+</button>
+            </div>
+            <button class="status bought" data-tooltip="Позначити як не куплено">Куплено</button>
+            <button class="delete-button" data-tooltip="Видалити товар">X</button>
+        </div>
+    </div>
+    <div class="column">
+        <h3>Залишилося</h3>
+        <div class="item">
+            <span>Печиво</span>
+            <span class="summary-amount">2</span>
+        </div>
+        <div class="item">
+            <span>Сир</span>
+            <span class="summary-amount">1</span>
+        </div>
+        <h3>Куплено</h3>
+        <div class="item">
+            <span class="crossed">Помідори</span>
+            <span class="summary-amount">2</span>
+        </div>
+    </div>
+</div>
+
+<div class="badge">
+    <span class="badge-main-text">BuyList</span>
+</div>
+</body>
+</html>
