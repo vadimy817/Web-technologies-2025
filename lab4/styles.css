@@ -1,0 +1,846 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Чорна шапка - top-header */
+.top-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+    /* position: static; - ЦЕ ВАЖЛИВО: щоб шапка не була sticky, прокручується разом зі сторінкою */
+}
+
+.top-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-left-info, .header-right-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-house {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-kma {
+    height: 30px;
+    width: auto;
+}
+
+.phone-info {
+    text-align: left;
+}
+
+.phone {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    color: #f9a825;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.phone:hover {
+    color: #f48c06;
+}
+
+.schedule, .delivery {
+    font-size: 14px;
+    color: #ccc; /* Світліший колір для тексту в чорній шапці */
+    white-space: nowrap;
+}
+
+.delivery {
+    margin-right: auto;
+}
+
+.login-button {
+    background-color: #f9a825;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.login-button:hover {
+    background-color: #f48c06;
+    transform: translateY(-2px);
+}
+
+/* Категорії та заголовок "Усі піци" */
+.category-navigation-wrapper {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    /* position: static; - також прокручується */
+}
+
+.category-navigation {
+    display: flex;
+    flex-direction: column; /* Заголовок зверху, потім навігація */
+    align-items: center; /* Центрування по горизонталі */
+    text-align: center;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Відступ від категорій */
+    color: #333;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.nav-list::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #333; /* Колір тексту категорій */
+    transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    border-radius: 20px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: #f9a825;
+    color: #fff; /* Колір тексту при наведенні/активності */
+}
+
+/* Основний контент */
+.main-content-area {
+    padding: 40px 0;
+}
+
+.main-layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.pizza-menu {
+    flex-grow: 1;
+    flex-basis: 65%;
+    min-width: 300px;
+}
+
+.pizza-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+@media (min-width: 1201px) {
+    .pizza-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.pizza-item {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pizza-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pizza-image {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.pizza-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pizza-card:hover .pizza-image img {
+    transform: scale(1.08);
+}
+
+/* Стилі для бейджів (Нова, Популярна) у верхньому лівому куті */
+.badge {
+    position: absolute;
+    background-color: #f9a825; /* Помаранчевий фон */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    z-index: 10;
+    white-space: nowrap;
+    line-height: 1; /* Щоб текст був щільніше */
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 10px; /* Заокруглення кута, якщо потрібно */
+}
+
+/* Стилі для бейджа знижки в нижньому лівому куті */
+.badge.discount-badge {
+    top: auto; /* Скасувати top: 0 */
+    bottom: 0; /* Прив'язати до низу */
+    left: 0;
+    background-color: #f9a825; /* Помаранчевий фон */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px; /* Більший розмір для знижки */
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); /* Форма прапорця */
+    white-space: nowrap;
+    transform: translateY(0); /* Забезпечити коректне позиціонування */
+    border-bottom-left-radius: 8px; /* Додаємо заокруглення для кращого вигляду */
+    border-top-right-radius: 8px;
+}
+/* Перекриття стилів для тексту всередині бейджа */
+.badge span {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.pizza-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pizza-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pizza-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    min-height: 60px;
+}
+
+.pizza-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.size-option {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+}
+
+.size-option svg {
+    vertical-align: middle;
+    margin-right: 8px;
+    fill: none;
+    stroke: #888;
+    stroke-width: 1.5;
+}
+
+.size-diameter {
+    margin-right: 15px;
+}
+
+.pizza-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.old-price {
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+    white-space: nowrap;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9a825;
+    white-space: nowrap;
+}
+
+.add-to-cart-button {
+    background-color: #f9a825;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-grow: 1;
+    min-width: 80px;
+    text-align: center;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f48c06;
+    transform: translateY(-2px);
+}
+
+
+/* Бічна панель (Кошик) */
+.sidebar {
+    flex-basis: 350px;
+    position: sticky; /* Фіксуємо сайдбар */
+    top: 0; /* Прилипає до самого верху вікна */
+    align-self: flex-start;
+    min-width: 280px;
+    z-index: 999; /* Перекриває вміст, але знаходиться під шапками, якщо вони теж sticky */
+}
+
+.order-summary {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 0px - 25px - 25px); /* min-height, щоб розтягувався */
+    /* top: 0px (sidebar) + 25px (padding-top) + 25px (padding-bottom) = 50px */
+}
+
+
+.sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-count {
+    background-color: #f9a825;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.clear-order-container {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.clear-order {
+    background-color: #e0e0e0;
+    color: #555;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.clear-order:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Дозволяє списку займати всю доступну висоту */
+    /* overflow-y: auto; - ВИДАЛЕНО, ТЕПЕР СКРОЛА НЕ БУДЕ */
+    /* -webkit-overflow-scrolling: touch; */
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: #f9a825 #f1f1f1; */
+}
+/* Стилізація скролбара для WebKit (Chrome, Safari) - ВИДАЛЕНО */
+/* .order-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.order-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.order-list::-webkit-scrollbar-thumb {
+    background: #f9a825;
+    border-radius: 10px;
+}
+
+.order-list::-webkit-scrollbar-thumb:hover {
+    background: #f48c06;
+} */
+
+
+.order-item {
+    display: flex;
+    justify-content: space-between; /* Розтягує елементи */
+    align-items: center;
+    gap: 10px; /* Менший проміжок між блоками */
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap; /* Для адаптивності */
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-details-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Дозволяє займати місце */
+    min-width: 150px; /* Мінімальна ширина для тексту та кнопок */
+}
+
+.order-details {
+    margin-bottom: 10px;
+}
+
+.order-name {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.order-size-weight {
+    font-size: 13px;
+    color: #888;
+}
+
+.order-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    width: 100%; /* Займає всю ширину, якщо переноситься */
+    justify-content: space-between; /* Розтягує елементи всередині */
+}
+
+.order-price {
+    font-size: 17px;
+    color: #f9a825;
+    font-weight: bold;
+    min-width: 60px;
+    text-align: left; /* Вирівнювання ціни вліво */
+    flex-shrink: 0; /* Не дозволяє стискатися */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0; /* Забираємо проміжок між кнопками та кількістю */
+    border: 1px solid #ccc; /* Обводка навколо блоку */
+    border-radius: 15px; /* Заокруглені кути */
+    overflow: hidden; /* Обрізає все, що виходить за межі */
+}
+
+.quantity-button {
+    background-color: #fff;
+    border: none; /* Забираємо обводку окремих кнопок */
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    color: #555;
+    flex-shrink: 0; /* Щоб не стискалися */
+}
+
+.quantity-button:hover {
+    background-color: #f0f0f0;
+}
+
+.quantity {
+    font-size: 16px;
+    font-weight: bold;
+    width: 25px; /* Фіксована ширина */
+    text-align: center;
+    color: #333;
+    flex-shrink: 0; /* Щоб не стискалася */
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0; /* Щоб не стискалася */
+}
+
+.remove-button:hover {
+    opacity: 0.7;
+    transform: rotate(15deg);
+}
+
+.remove-button svg {
+    width: 18px;
+    height: 18px;
+    stroke: #B0B0B0;
+    stroke-width: 2;
+}
+
+.order-image-wrapper {
+    width: 60px; /* Ширина зображення */
+    height: 60px; /* Висота зображення */
+    overflow: hidden; /* Обрізаємо зображення */
+    border-radius: 8px; /* Заокруглені кути */
+    flex-shrink: 0; /* Запобігає стисненню */
+}
+
+.order-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заповнюємо контейнер */
+    object-position: right; /* Обрізаємо справа */
+    display: block;
+}
+
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: auto; /* Притискає донизу, якщо вмісту мало */
+    padding-bottom: 10px; /* Додаємо невеликий padding, щоб не прилипало до кнопки */
+}
+
+.total-label {
+    color: #333;
+}
+
+.total-price {
+    color: #f9a825;
+}
+
+.order-button {
+    background-color: #f9a825;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-button:hover {
+    background-color: #f48c06;
+    transform: translateY(-2px);
+}
+
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #ccc;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #f9a825;
+}
+
+
+/* Адаптивний дизайн */
+/* Для "нормального екрану" (ширина до 1200px) */
+@media (max-width: 1200px) {
+    .pizza-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 піци в ряд */
+    }
+
+    .top-header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-left-info, .header-right-info {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .delivery {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .phone-info {
+        text-align: center;
+    }
+}
+
+/* Для "малого екрану" (ширина до 992px) */
+@media (max-width: 992px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .pizza-menu, .sidebar {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        position: static; /* Відключаємо sticky на малих екранах */
+        margin-top: 30px;
+    }
+    .order-summary {
+        min-height: auto; /* Відключаємо мінімальну висоту на малих екранах */
+    }
+
+    .pizza-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Для дуже малих екранів (ширина до 768px, "малий екран" на скріншоті) */
+@media (max-width: 768px) {
+    .header-left-info, .header-right-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login-button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .nav-list {
+        justify-content: flex-start;
+    }
+
+    .pizza-list {
+        grid-template-columns: 1fr;
+    }
+
+    .pizza-image {
+        height: 180px;
+    }
+
+    .pizza-name {
+        font-size: 20px;
+    }
+    .pizza-description {
+        min-height: auto;
+    }
+
+    .current-price {
+        font-size: 18px;
+    }
+
+    .add-to-cart-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .pizza-actions .price-options {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .pizza-actions .price-options > * {
+        width: 100%;
+        text-align: center;
+    }
+    .pizza-actions .price-options .current-price {
+        text-align: left;
+        width: auto;
+    }
+    .add-to-cart-button {
+        margin-top: 5px;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-details-group {
+        width: 100%;
+    }
+    .order-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+    .order-price {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .sidebar-title {
+        font-size: 20px;
+    }
+
+    .order-total {
+        font-size: 20px;
+    }
+
+    .order-button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    .page-title {
+        font-size: 28px;
+    }
+
+    .order-image-wrapper {
+        margin-top: 10px; /* Відступ, якщо зображення переноситься вниз */
+    }
+}
