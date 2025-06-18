@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Піца KMA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="container top-header-content">
+            <div class="header-left-info">
+                <div class="logo">
+                    <img src="images/home-icon.png" alt="Логотип KMA Дім" class="logo-house">
+                    <img src="images/map-icon.png" alt="Логотип KMA" class="logo-kma">
+                </div>
+                <div class="phone-info">
+                    <a href="tel:(044) 222 5 222" class="phone">(044) 222 5 222</a>
+                    <p class="schedule">24 години / 7 днів на тиждень</p>
+                </div>
+            </div>
+            <div class="header-right-info">
+                <p class="delivery">Безкоштовна доставка піци</p>
+                <button class="login-button">Увійти</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="category-navigation-wrapper">
+        <div class="container category-navigation">
+            <h1 class="page-title">Усі піци</h1>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link active">Усі піци</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Нова</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Популярна</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">З грибами</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">З морепродуктами</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Вега</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main-content-area">
+        <div class="container main-layout">
+            <section class="pizza-menu">
+                <ul class="pizza-list">
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <div class="badge new-badge"><span>Нова</span></div>
+                                <img src="images/pizza_1.jpg" alt="Піца Імпреза">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Імпреза</h3>
+                                <p class="pizza-description">Балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна паста, петрушка</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 370 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 660 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="badge discount-badge"><span>-20%</span></div>
+                                    <div class="price-options">
+                                        <span class="current-price">99 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">169 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <div class="badge popular-badge"><span>Популярна</span></div>
+                                <img src="images/pizza_2.jpg" alt="Піца BBQ">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">BBQ</h3>
+                                <p class="pizza-description">Мисливські ковбаски, ковбаски пепероні, шинка, сир домашній, шампіньйони, петрушка, оливки</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 460 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 840 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">139 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">199 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <img src="images/Normal.jpg" alt="Піца Міксовий поло">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Міксовий поло</h3>
+                                <p class="pizza-description">Ветчина, куриця копчена, сир моцарелла, ананаси, кукурудза, петрушка, соус томатний</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 430 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 780 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">115 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">179 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <div class="badge new-badge"><span>Нова</span></div>
+                                <img src="images/pizza_1.jpg" alt="Піца Четверта">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Піца Четверта</h3>
+                                <p class="pizza-description">Опис для четвертої піци: якісь нові інгредієнти та смаки.</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 400 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 700 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="badge discount-badge"><span>-10%</span></div>
+                                    <div class="price-options">
+                                        <span class="current-price">125 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">185 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <img src="images/pizza_2.jpg" alt="Піца П'ята">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Піца П'ята</h3>
+                                <p class="pizza-description">Опис для п'ятої піци: інші інгредієнти та інші смакові поєднання.</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 450 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 800 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">145 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">205 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <div class="badge popular-badge"><span>Популярна</span></div>
+                                <img src="images/Large.jpg" alt="Піца Шоста">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Піца Шоста</h3>
+                                <p class="pizza-description">Опис для шостої піци: ще один варіант з різними начинками.</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 420 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 750 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">110 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">160 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <img src="images/Normal.jpg" alt="Піца Сьома">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Піца Сьома</h3>
+                                <p class="pizza-description">Опис для сьомої піци: унікальний рецепт.</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 390 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 720 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">105 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">155 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <img src="images/pizza_1.jpg" alt="Піца Восьма">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Піца Восьма</h3>
+                                <p class="pizza-description">Опис для восьмої піци: екзотичні інгредієнти.</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 480 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 850 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">150 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">210 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pizza-item">
+                        <div class="pizza-card">
+                            <div class="pizza-image">
+                                <img src="images/pizza_2.jpg" alt="Піца Дев'ята">
+                            </div>
+                            <div class="pizza-info">
+                                <h3 class="pizza-name">Піца Дев'ята</h3>
+                                <p class="pizza-description">Опис для дев'ятої піци: ще один варіант смачної піци.</p>
+                                <div class="pizza-options">
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 30 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 410 г</span>
+                                    </div>
+                                    <div class="size-option">
+                                        <span class="size-diameter"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 5V8L9.5 9.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> Ø 40 см</span>
+                                        <span class="size-weight"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 9H11" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 6L7.5 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg> 760 г</span>
+                                    </div>
+                                </div>
+                                <div class="pizza-actions">
+                                    <div class="price-options">
+                                        <span class="current-price">120 грн</span>
+                                        <button class="add-to-cart-button small-pizza-btn" data-size="small">Купити</button>
+                                        <span class="current-price">170 грн</span>
+                                        <button class="add-to-cart-button large-pizza-btn" data-size="large">Купити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <aside class="sidebar">
+                <div class="order-summary">
+                    <h2 class="sidebar-title">Замовлення <span class="order-count">3</span></h2>
+                    <div class="clear-order-container">
+                        <button class="clear-order">Очистити замовлення</button>
+                    </div>
+                    <ul class="order-list">
+                        <li class="order-item">
+                            <div class="order-details-group">
+                                <div class="order-details">
+                                    <h4 class="order-name">BBQ</h4>
+                                    <span class="order-size-weight">Мала (30 см, 460 г)</span>
+                                </div>
+                                <div class="order-actions">
+                                    <span class="order-price">556 грн</span>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-button decrease-qty">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </button>
+                                        <span class="quantity">4</span>
+                                        <button class="quantity-button increase-qty">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3V11M3 7H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </button>
+                                    </div>
+                                    <button class="remove-button">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 4L12 12" stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-image-wrapper">
+                                <img src="images/pizza_2.jpg" alt="Піца BBQ" class="order-item-image">
+                            </div>
+                        </li>
+                        <li class="order-item">
+                            <div class="order-details-group">
+                                <div class="order-details">
+                                    <h4 class="order-name">Россо Густо</h4>
+                                    <span class="order-size-weight">Мала (30 см, 380 г)</span>
+                                </div>
+                                <div class="order-actions">
+                                    <span class="order-price">189 грн</span>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-button decrease-qty">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </button>
+                                        <span class="quantity">1</span>
+                                        <button class="quantity-button increase-qty">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3V11M3 7H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </button>
+                                    </div>
+                                    <button class="remove-button">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 4L12 12" stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-image-wrapper">
+                                <img src="images/pizza_1.jpg" alt="Піца Россо Густо" class="order-item-image">
+                            </div>
+                        </li>
+                        <li class="order-item">
+                            <div class="order-details-group">
+                                <div class="order-details">
+                                    <h4 class="order-name">Міксовий поло</h4>
+                                    <span class="order-size-weight">Велика (40 см, 780 г)</span>
+                                </div>
+                                <div class="order-actions">
+                                    <span class="order-price">179 грн</span>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-button decrease-qty">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </button>
+                                        <span class="quantity">1</span>
+                                        <button class="quantity-button increase-qty">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3V11M3 7H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </button>
+                                    </div>
+                                    <button class="remove-button">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 4L4 12" stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 4L12 12" stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="order-image-wrapper">
+                                <img src="images/Normal.jpg" alt="Піца Міксовий поло" class="order-item-image">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="order-total">
+                        <span class="total-label">Сума замовлення</span>
+                        <span class="total-price">924 грн</span>
+                    </div>
+                    <button class="order-button">Замовити</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2023 Піца KMA. Всі права захищено.</p>
+            <ul class="social-links">
+                <li><a href="#" class="social-link">Facebook</a></li>
+                <li><a href="#" class="social-link">Instagram</a></li>
+                <li><a href="#" class="social-link">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
