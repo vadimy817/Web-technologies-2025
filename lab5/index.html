@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Піца KMA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="corner-badge">
+        <span class="corner-badge-text">PIZZA<br>KMA</span>
+        <img src="images/discount.svg" alt="badge-tail" class="corner-badge-tail">
+    </div>
+    <header class="top-header">
+        <div class="container top-header-content">
+            <div class="header-left-info">
+                <div class="logo">
+                    <img src="images/home-icon.png" alt="Логотип KMA Дім" class="logo-house">
+                    <img src="images/map-icon.png" alt="Логотип KMA" class="logo-kma">
+                </div>
+                <div class="phone-info">
+                    <a href="tel:(044) 222 5 222" class="phone">(044) 222 5 222</a>
+                    <p class="schedule">24 години / 7 днів на тиждень</p>
+                </div>
+            </div>
+            <div class="header-right-info">
+                <p class="delivery">Безкоштовна доставка піци</p>
+                <button class="login-button">Увійти</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="category-navigation-wrapper">
+        <div class="container category-navigation">
+            <h1 class="page-title">Усі піци</h1>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link active">Усі піци</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Нова</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Популярна</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">З грибами</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">З морепродуктами</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Вега</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main-content-area">
+        <div class="container main-layout">
+            <section class="pizza-menu">
+                <div id="pizza-list"></div>
+            </section>
+            <aside class="sidebar">
+                <div class="order-summary">
+                    <h2 class="sidebar-title">Замовлення <span class="order-count">0</span></h2>
+                    <div class="clear-order-container">
+                        <button class="clear-order">Очистити замовлення</button>
+                    </div>
+                    <div id="cart"></div>
+                    <div class="order-total">
+                        <span class="total-label">Сума замовлення</span>
+                        <span class="total-price">0 грн</span>
+                    </div>
+                    <button class="order-button">Замовити</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2023 Піца KMA. Всі права захищено.</p>
+            <ul class="social-links">
+                <li><a href="#" class="social-link">Facebook</a></li>
+                <li><a href="#" class="social-link">Instagram</a></li>
+                <li><a href="#" class="social-link">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="bottom-discount-badge">
+        <img src="images/discount.svg" alt="badge-shape" class="bottom-discount-shape">
+        <span class="bottom-discount-text">ЦЬОГО<br>ТИЖНЯ<br>НА ВСЕ</span>
+        <hr class="bottom-discount-hr">
+        <span class="bottom-discount-percent">-20%</span>
+    </div>
+
+    <div class="page-content-with-badge">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

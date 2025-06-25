@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "name": "Імпреза",
+    "description": "Балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна паста, петрушка",
+    "img": "images/pizza_1.jpg",
+    "price": 99,
+    "type": ["meat", "pineapple"],
+    "isNew": true
+  },
+  {
+    "id": 2,
+    "name": "BBQ",
+    "description": "Мисливські ковбаски, ковбаски пепероні, шинка, сир домашній, шампіньйони, петрушка, оливки",
+    "img": "images/pizza_2.jpg",
+    "price": 139,
+    "type": ["meat", "mushroom"],
+    "isPopular": true
+  },
+  {
+    "id": 3,
+    "name": "Міксовий поло",
+    "description": "Ветчина, куриця копчена, сир моцарелла, ананаси, кукурудза, петрушка, соус томатний",
+    "img": "images/pizza_3.jpg",
+    "price": 115,
+    "type": ["meat", "pineapple"]
+  },
+  {
+    "id": 4,
+    "name": "Піца Четверта",
+    "description": "Якісь нові інгредієнти та смаки",
+    "img": "images/pizza_4.jpg",
+    "price": 120,
+    "type": ["vega"]
+  },
+  {
+    "id": 5,
+    "name": "Піца П'ята",
+    "description": "Інші інгредієнти та інші смакові поєднання",
+    "img": "images/pizza_5.jpg",
+    "price": 145,
+    "type": ["meat"]
+  },
+  {
+    "id": 6,
+    "name": "Піца Шоста",
+    "description": "Ще один варіант з різними начинками",
+    "img": "images/pizza_6.jpg",
+    "price": 110,
+    "type": ["meat"]
+  },
+  {
+    "id": 7,
+    "name": "Піца Сьома",
+    "description": "Унікальний рецепт",
+    "img": "images/pizza_7.jpg",
+    "price": 105,
+    "type": ["vega"]
+  },
+  {
+    "id": 8,
+    "name": "Піца Восьма",
+    "description": "Екзотичні інгредієнти",
+    "img": "images/pizza_8.jpg",
+    "price": 150,
+    "type": ["seafood"]
+  },
+  {
+    "id": 9,
+    "name": "Піца Дев'ята",
+    "description": "Ще один варіант смачної піци",
+    "img": "images/pizza_9.jpg",
+    "price": 120,
+    "type": ["mushroom"]
+  },
+  {
+    "id": 10,
+    "name": "Піца Десята",
+    "description": "Оригінальний смак",
+    "img": "images/pizza_1.jpg",
+    "price": 130,
+    "type": ["vega", "mushroom"]
+  }
+] 
